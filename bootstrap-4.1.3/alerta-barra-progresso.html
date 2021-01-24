@@ -15,14 +15,25 @@
 
 <body style="margin-bottom: 200px;padding: 16px;">
     <h2>Alertas</h2>
-    <div class="alert">
+    <div class="alert alert-primary">
         <strong>Primary</strong>Você tem uma postagem pendente!
     </div>
 
+    <br>
+
+    <div class="alert alert-secondary">
+        <strong>Secondery</strong>Você tem uma postagem pendente!
+    </div>
+
+    <p class="font-weight-bold">Se aplica para todas as classes de cores: Primary, Secondary, Success, Danger, Warning,
+        Info, Light e Dark.</p>
+
+    <br>
+    <br>
 
     <h2>Alerta com botão fechar</h2>
-    <div>
-        <button type="button">
+    <div class="alert alert-warning alert-dismissible">
+        <button class="close bnt bnt=danger" type="button" data-dismiss="alert">
             &times;
         </button>
         <strong>Fechar</strong> Alerta com botão fechar
@@ -31,7 +42,7 @@
 
 
     <h2>Alerta com mais conteúdos</h2>
-    <div>
+    <div class="alert alert-danger">
 
         <h4>Título</h4>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a metus in purus malesuada vulputate. Sed
@@ -45,22 +56,43 @@
 
 
     <h2>Barra de progresso</h2>
-    <div>
-        <div></div>
+    <div class="progress">
+        <div class="progress-bar w-75">75%</div>
+    </div>
+    <br>
+    <div class="progress">
+        <div class="progress-bar bg-info" style="width: 35%;">35%</div>
     </div>
     <br>
 
+
     <h2>Altura</h2>
+    <div class="progress" style="height: 23px;">
+        <div class="progress-bar bg-success" style="width: 23%;">23%</div>
+    </div>
+    <br>
 
 
     <h2>Listrado</h2>
+    <div class="progress" style="height: 23px;">
+        <div class="progress-bar bg-dark progress-bar-striped" style="width: 97%;">97%</div>
+    </div>
+    <br>
 
 
     <h2>Animado</h2>
+    <div class="progress" style="height: 23px;">
+        <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" style="width: 97%;">97%</div>
+    </div>
+    <br>
 
 
     <h2>Múltiplas barras</h2>
-
+    <div class="progress">
+        <div class="progress-bar bg-secondary" style="width: 35%;">35% Fotos</div>
+        <div class="progress-bar bg-success" style="width: 25%;">25% Músicas</div>
+        <div class="progress-bar bg-warning text-dark" style="width: 40%;">40% Documentos</div>
+    </div>
 
 
 
